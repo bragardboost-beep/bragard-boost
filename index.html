@@ -1,1 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bragard Boost — Accueil</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Bragard Boost</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menu">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section id="accueil" class="hero">
+      <div class="container hero-content">
+        <h1>Boostez votre présence avec Bragard Boost</h1>
+        <p>Solutions rapides et efficaces pour faire grandir votre visibilité en ligne et hors ligne.</p>
+        <p><a class="btn" href="#services">Découvrir nos offres</a></p>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Nos services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Marketing digital</h3>
+            <p>Stratégies sur mesure : réseaux sociaux, publicité, contenu.</p>
+          </article>
+          <article class="card">
+            <h3>Branding</h3>
+            <p>Création d'identité visuelle et positionnement de marque.</p>
+          </article>
+          <article class="card">
+            <h3>Conseil & formation</h3>
+            <p>Accompagnement pratique pour vos équipes et votre stratégie.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="section about">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>Bragard Boost aide les PME et indépendants à trouver plus de clients et à être mieux visibles, avec des actions concrètes et mesurables.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form" action="#" method="post" novalidate>
+          <label>Nom<br /><input type="text" name="name" required /></label>
+          <label>Email<br /><input type="email" name="email" required /></label>
+          <label>Message<br /><textarea name="message" rows="5" required></textarea></label>
+          <button class="btn" type="submit">Envoyer</button>
+          <p id="form-msg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Bragard Boost — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
